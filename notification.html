@@ -1,0 +1,44 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Moving Crypto Coin</title>
+    <style>
+        p {
+            font: 22px Arial, sans-serif;
+            overflow: hidden;
+            white-space: nowrap;
+            width: 420px;
+            border: 1px solid #ddd;
+            padding: 12px;
+        }
+
+        .coin {
+            display: inline-block;
+            animation: moveCoin 3s linear infinite;
+        }
+
+        @keyframes moveCoin {
+            0% {
+                transform: translateX(-40px) rotate(0deg);
+            }
+
+            100% {
+                transform: translateX(380px) rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>
+        Crypto is growing:
+        <span class="coin">🪙</span>
+    </p>
+
+</body>
+
+</html>
